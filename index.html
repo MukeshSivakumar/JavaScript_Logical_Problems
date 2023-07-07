@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGICS</title>
+
+    <script type="text/javascript" src="logicFunctions.js">
+    </script>
+   
+    <!-- <script type="text/javascript" src="FizzBuzz.js">
+    </script>
+
+    <script type="text/javascript" src="string.js">
+    </script>
+
+    <script type="text/javascript" src="sort.js">
+    </script> 
+   
+    <script type="text/javascript" src="bubbleSort.js">
+    </script> -->
+
+    <style>
+        
+        body {
+          margin: 0;
+          padding : 0;
+          background: linear-gradient(to right,rgb(36, 36, 201),lightblue,rgb(36, 36, 201));
+          height : 100vh;
+        }
+        #container {
+            height : 100%;
+        }
+        .btnclass {
+            background-color: darkblue;
+            padding : 10px;
+            color : white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body align="center">
+    <div id="container">
+    <h1>Testing JS Logical functions</h1>
+    <input class="btnclass" type="button" name="swap" onclick="swap(980,45)" value="SWAP 2 numbers"> 
+    <input class="btnclass" type="button" name="fizzbuzz" onclick="fizzBuzz()" value="FIZZBUZZ">
+    <input class="btnclass" type="button" name="sort" onclick="selectionSort()" value="SELECTION SORT"> <br><br>
+    <input class="btnclass" type="button" name="bubble" onclick="bubbleSort()" value="BUBBLE SORT"> 
+    <input class="btnclass" type="button" name="pattern1" onclick="pattern1(5)" value="PATTERN 1"> 
+    <!-- <input type="button" name="Check 100 " onclick="check100(a,b)" value="CHECK 100"> -->
+    <input class="btnclass" type="button" name="substring" onclick="subString()" value="SUB-STRING"> <br><br>
+    <input class="btnclass" type="button" name="merge-array" onclick="mergeArray()" value="MERGE ARRAY">
+    <input class="btnclass" type="button" name="sort-string" onclick="sortString()" value="SORT STRING">
+    <input class="btnclass" type="button" name="mul-table" onclick="multiTable()" value="MULTI - TABLE"> <br> <br>
+    <input class="btnclass" type="button" name="date-time" onclick="currentDateTime()" value="DATE & TIME">
+    <input class="btnclass" type="button" name="numberOfDays" onclick="numberOfDates()" value="ARITHMETIC DATES B/W 2 DATES">
+    <input class="btnclass" type="button" name="stringFrequency" onclick="str_Frequency()" value="Frequency of a string"> <br><br>
+    <input class="btnclass" type="button" name="encodeString" onclick="stringEncoding()" value="Encode a String">
+    <input class="btnclass" type="button" name="celebrityProblem" onclick="celebrityProblem()" value="Celebrity Problem">
+</div>
+</body>
+</html>
