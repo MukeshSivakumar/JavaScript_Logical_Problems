@@ -89,6 +89,71 @@
 
 
 
+// --------convert  number to array problem ------------- 
+
+
+// let num = 372920;
+
+// let arr = [];
+
+// let remainder ;
+// let i = 0;
+// for(;num>=1;)
+// {
+    
+//    remainder = num % 10;
+//    console.log("number : "+num);
+//    console.log("remainder : "+remainder);
+//    arr[i] = remainder;
+//    i++;
+//    num = Math.floor(num / 10) ;
+// }
+
+// console.log(arr.reverse());
+
+
+
+// ------------------- count length of a number ------------
+
+
+// let num = 372920;
+
+// let count = 0;
+// let i = 0;
+// while(num != 0 )
+// {
+//     num = Math.floor(num /10);
+//     console.log(num);
+//     count = count+1;
+  
+// }
+
+// console.log(count);
+
+
+
+// ----------- reverse string -------------
+
+
+
+// let str = "Orange";
+
+// console.log(`Original String is ${str}`);
+
+// let str2 = "";
+
+// for(let i=0; i < str.length ; i++)
+// {
+//     // console.log(str[i]);
+//     // let temp = str[i];
+//     // str[i] = str[str.length - 1 - i];
+//     // str[str.length - 1 - i] = temp;
+//     console.log("start");
+//     str2[i] = str[str.length - 1 - i];
+//     console.log("End");
+// }
+
+// console.log(`Reversed String is ${str2}`);
 
 
 
@@ -96,3 +161,42 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------- doubts ------------------------------
+
+
+let arr = [23,66,1,90,17];
+
+console.log(arr.length);
+for(let i=0; i<=arr.length-1 ; i++)
+{ 
+  for(let j=i+1; j<=arr.length-1; j++)
+  {
+    if(arr[i] > arr[j])
+    {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    console.log(arr);
+  }
+  
+}
+
+// console.log(arr);
+
+// n=4
+// *****
+// *****
+// *****
+// *****

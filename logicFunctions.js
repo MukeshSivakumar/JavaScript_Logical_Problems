@@ -840,3 +840,55 @@ function primeNumber()
         alert("INVALID INPUT - Please enter a valid number");
     }
 }
+
+
+
+// valid paranthesis 
+
+function paranthesis()
+{
+    let inputStr = prompt("Enter the paranthesis : ");
+    let strArr = inputStr.split("");
+
+    let openBracketArr = ["(","[","{"];
+    let closeBracketArr = [")","]","}"];
+
+    let openBracketCount=0;
+ 
+    let flag = true;
+    for(let i=0; i<strArr.length ; i++)
+    {
+        if(closeBracketArr.includes(strArr[i]))
+        {
+            
+            let closeIndex = closeBracketArr.indexOf(strArr[i]);
+            let openBracket = openBracketArr[closeIndex];
+
+            console.log("array previous : "+strArr[strArr.length-1-i]);
+            console.log("openBracket : "+openBracket);
+
+            if((strArr[strArr.length-1-i] != openBracket) && (strArr[i-1] != openBracket))
+            {
+                flag = false;
+                break;
+            }
+
+            openBracketCount--;
+
+        }else{
+            console.log("else part : "+strArr[i]);
+            openBracketCount++;
+        }
+    }
+
+    console.log("open bracket count : "+openBracketCount);
+    console.log("flag : "+flag);
+    if(flag == true && openBracketCount == 0 )
+    {
+        alert("Paranthesis Matches")
+    }
+    else{
+        alert(false);
+    }
+
+}
